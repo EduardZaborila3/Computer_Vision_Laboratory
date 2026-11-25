@@ -1,0 +1,145 @@
+=== 1b. Numar keypoints ===
+HARRIS : 9109
+SIFT   : 1484
+ORB    : 1935
+BRISK  : 1608
+AKAZE  : 565
+
+HARRIS - keypoints pe fiecare regiune 8x8:
+[[   0    0    0  141  249  107   42   56]
+ [   0    0   92  167   22  251  119   35]
+ [   0    0  128  236  362  220   86   36]
+ [   0   38   25  104  192  204  205   75]
+ [  29    0  237   77  288  180   51   27]
+ [ 331  526  579   68  217  170   57  106]
+ [1263  792  131    0  277   12  144  217]
+ [   0    0    0    0   38   15   20   65]]
+  min=0  max=1263  regiuni goale=14  std=205.6
+
+SIFT - keypoints pe fiecare regiune 8x8:
+[[ 0  0  0 30 26 16 18 43]
+ [ 0  0  8 24 27 41 34 17]
+ [ 0  0 14 28 23 27 14 13]
+ [ 0  3  7 35 23 33 46 56]
+ [ 2  0 23 31 54 51 47 45]
+ [49 39 39 29 50 37 41 23]
+ [62 28 26 13 33 27 26 14]
+ [ 4  5  9 14 13 34  4  6]]
+  min=0  max=62  regiuni goale=9  std=16.9
+
+ORB - keypoints pe fiecare regiune 8x8:
+[[  0   0   0   3   0   0   7   1]
+ [  0   0  28  62  22  80  40   3]
+ [  0   0  42  75  97  59  26   2]
+ [  0   6   4  47  66  52  37   0]
+ [  0   1  74  43  91  54  26   0]
+ [ 34 135 152  42  63  45   8   0]
+ [ 78 208  15   3  71   3  13   7]
+ [  0   0   0   0   0   0   2   8]]
+  min=0  max=208  regiuni goale=20  std=41.6
+
+BRISK - keypoints pe fiecare regiune 8x8:
+[[  0   0   0  20  18   3  11  12]
+ [  0   0  18  55  23  60  43   9]
+ [  0   0  23  46  58  37  13   3]
+ [  0   3   5  32  33  35  36  11]
+ [  0   1  39  37  65  51  34  16]
+ [ 55  96  87  29  53  38  17   3]
+ [ 74 113  20  10  55  17  35  15]
+ [  0   0   2   1   7  11   9  11]]
+  min=0  max=113  regiuni goale=11  std=25.8
+
+AKAZE - keypoints pe fiecare regiune 8x8:
+[[ 0  0  0  2  2  1  4  5]
+ [ 0  0  7 15 11 23 17  3]
+ [ 0  0 14 23 18  8  8  1]
+ [ 0  1  3 16 16 12 16  3]
+ [ 0  0 24 13 19 15 14  2]
+ [13 31 32 19 29 20 14  0]
+ [19 28  6  3 17  4  6  3]
+ [ 0  0  0  0  2  0  2  1]]
+  min=0  max=32  regiuni goale=16  std=9.2
+
+=== 1c. Blur ===
+transformare detector  kp_orig  kp_transf   BF  kNN
+    mean 3x3   HARRIS     9109       7305 5639 4042
+    mean 3x3     SIFT     1484       1155  725  634
+    mean 3x3      ORB     1935       1917 1434 1393
+    mean 3x3    BRISK     1608        738  571  576
+    mean 3x3    AKAZE      565        489  451  453
+    mean 7x7   HARRIS     9109      12071 2698    0
+    mean 7x7     SIFT     1484        332  250  211
+    mean 7x7      ORB     1935        784  548  512
+    mean 7x7    BRISK     1608        166  119  127
+    mean 7x7    AKAZE      565        309  249  259
+  mean 15x15   HARRIS     9109       9193  583    0
+  mean 15x15     SIFT     1484         98   68   79
+  mean 15x15      ORB     1935         64   47   96
+  mean 15x15    BRISK     1608         18   15   29
+  mean 15x15    AKAZE      565         73   59   69
+   gauss 3x3   HARRIS     9109       7027 6176 6321
+   gauss 3x3     SIFT     1484       1353  831  750
+   gauss 3x3      ORB     1935       1924 1530 1493
+   gauss 3x3    BRISK     1608        912  723  746
+   gauss 3x3    AKAZE      565        505  470  473
+   gauss 7x7   HARRIS     9109       5435 3394   31
+   gauss 7x7     SIFT     1484        609  426  338
+   gauss 7x7      ORB     1935       1558 1079 1041
+   gauss 7x7    BRISK     1608        378  265  291
+   gauss 7x7    AKAZE      565        398  339  342
+ gauss 15x15   HARRIS     9109       7334 1560    0
+ gauss 15x15     SIFT     1484        261  198  157
+ gauss 15x15      ORB     1935        471  374  394
+ gauss 15x15    BRISK     1608        106   80   98
+ gauss 15x15    AKAZE      565        248  191  200
+
+=== 1d. Rotatie ===
+transformare detector  kp_orig  kp_transf   BF  kNN
+  rot 10 deg   HARRIS     9109       8924 2868    0
+  rot 10 deg     SIFT     1484       1514  985  954
+  rot 10 deg      ORB     1935       1926 1372 1286
+  rot 10 deg    BRISK     1608       1402  881  827
+  rot 10 deg    AKAZE      565        544  449  443
+  rot 30 deg   HARRIS     9109       1756   81    0
+  rot 30 deg     SIFT     1484       1395  874  860
+  rot 30 deg      ORB     1935       1941 1172 1044
+  rot 30 deg    BRISK     1608       1318  796  727
+  rot 30 deg    AKAZE      565        511  394  370
+  rot 45 deg   HARRIS     9109       1452   47    0
+  rot 45 deg     SIFT     1484       1334  866  831
+  rot 45 deg      ORB     1935       1935 1075  969
+  rot 45 deg    BRISK     1608       1098  693  634
+  rot 45 deg    AKAZE      565        487  368  356
+  rot 90 deg   HARRIS     9109       7369  106    0
+  rot 90 deg     SIFT     1484       1272  781  719
+  rot 90 deg      ORB     1935       1928 1134 1064
+  rot 90 deg    BRISK     1608       1017  649  637
+  rot 90 deg    AKAZE      565        486  351  352
+ rot 180 deg   HARRIS     9109       9303  165    0
+ rot 180 deg     SIFT     1484       1482 1305 1316
+ rot 180 deg      ORB     1935       1930 1565 1503
+ rot 180 deg    BRISK     1608       1604 1180 1118
+ rot 180 deg    AKAZE      565        559  543  539
+
+=== 1e. Zgomot gaussian ===
+transformare detector  kp_orig  kp_transf   BF  kNN
+ noise std=5   HARRIS     9109       9408 8373 8264
+ noise std=5     SIFT     1484       1606 1019  968
+ noise std=5      ORB     1935       1946 1716 1710
+ noise std=5    BRISK     1608       1773 1302 1269
+ noise std=5    AKAZE      565        586  523  517
+noise std=15   HARRIS     9109      17564 7806 1851
+noise std=15     SIFT     1484       1685  758  548
+noise std=15      ORB     1935       1944 1435 1327
+noise std=15    BRISK     1608       4207 1132  826
+noise std=15    AKAZE      565        631  467  449
+noise std=30   HARRIS     9109      71054 6916    0
+noise std=30     SIFT     1484       1431  553  298
+noise std=30      ORB     1935       1952 1136  927
+noise std=30    BRISK     1608      11082 1069  459
+noise std=30    AKAZE      565        786  421  373
+noise std=60   HARRIS     9109     134659 3752    0
+noise std=60     SIFT     1484       1626  432  130
+noise std=60      ORB     1935       1981  773  409
+noise std=60    BRISK     1608      16566  985  168
+noise std=60    AKAZE      565       1247  363  242

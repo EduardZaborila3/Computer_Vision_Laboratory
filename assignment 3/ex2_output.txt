@@ -1,0 +1,229 @@
+Train: 400 imagini, Test: 83 imagini
+
+##### Detector: HARRIS #####
+  extrase features: 100/400
+  extrase features: 200/400
+  extrase features: 300/400
+  extrase features: 400/400
+  extrase features: 83/83
+--- HARRIS + BF ---
+  clasificate: 20/83
+  clasificate: 40/83
+  clasificate: 60/83
+  [paritate] UAIC_00223.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.711
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[ 5  6  4]
+ [ 1 20  6]
+ [ 0  7 34]]
+--- HARRIS + kNN ---
+  [paritate] BC_00133.JPG: ['BCU', 'BVD_COPOU']
+  clasificate: 20/83
+  [paritate] BC_00152.JPG: ['BCU', 'BVD_COPOU', 'UAIC']
+  [paritate] BC_00155.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 40/83
+  [paritate] UAIC_00204.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00218.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 60/83
+  [paritate] UAIC_00220.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00226.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00228.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00229.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00236.JPG: ['BCU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.494
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[10  0  5]
+ [ 8  5 14]
+ [14  1 26]]
+
+##### Detector: SIFT #####
+  extrase features: 100/400
+  extrase features: 200/400
+  extrase features: 300/400
+  extrase features: 400/400
+  extrase features: 83/83
+--- SIFT + BF ---
+  [paritate] BCU_00073.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 20/83
+  [paritate] BC_00150.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 40/83
+  [paritate] UAIC_00217.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 60/83
+  [paritate] UAIC_00233.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.578
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[ 5  6  4]
+ [ 0 12 15]
+ [ 0 10 31]]
+--- SIFT + kNN ---
+  clasificate: 20/83
+  [paritate] BC_00153.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 40/83
+  clasificate: 60/83
+  [paritate] UAIC_00220.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00224.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00231.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00238.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.614
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[ 8  3  4]
+ [ 1 16 10]
+ [ 3 11 27]]
+
+##### Detector: SURF #####
+SURF indisponibil, trec mai departe.
+
+##### Detector: ORB #####
+  extrase features: 100/400
+  extrase features: 200/400
+  extrase features: 300/400
+  extrase features: 400/400
+  extrase features: 83/83
+--- ORB + BF ---
+  clasificate: 20/83
+  [paritate] BC_00149.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 40/83
+  clasificate: 60/83
+  [paritate] UAIC_00221.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00231.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.530
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[ 7  6  2]
+ [ 0 17 10]
+ [ 2 19 20]]
+--- ORB + kNN ---
+  [paritate] BC_00135.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 20/83
+  [paritate] BC_00142.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] BC_00143.JPG: ['BCU', 'BVD_COPOU', 'UAIC']
+  [paritate] BC_00144.JPG: ['BCU', 'BVD_COPOU']
+  [paritate] BC_00145.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] BC_00148.JPG: ['BCU', 'UAIC']
+  [paritate] BC_00152.JPG: ['BCU', 'UAIC']
+  clasificate: 40/83
+  [paritate] UAIC_00215.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00218.JPG: ['BCU', 'UAIC']
+  clasificate: 60/83
+  [paritate] UAIC_00225.JPG: ['BCU', 'BVD_COPOU']
+  [paritate] UAIC_00231.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00234.JPG: ['BCU', 'BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00238.JPG: ['BCU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.494
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[14  1  0]
+ [ 9  8 10]
+ [17  5 19]]
+
+##### Detector: BRISK #####
+  extrase features: 100/400
+  extrase features: 200/400
+  extrase features: 300/400
+  extrase features: 400/400
+  extrase features: 83/83
+--- BRISK + BF ---
+  clasificate: 20/83
+  [paritate] BC_00145.JPG: ['BCU', 'UAIC']
+  clasificate: 40/83
+  [paritate] UAIC_00207.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 60/83
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.446
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[ 5  1  9]
+ [ 0 13 14]
+ [ 1 21 19]]
+--- BRISK + kNN ---
+  [paritate] BCU_00081.JPG: ['BCU', 'UAIC']
+  clasificate: 20/83
+  [paritate] BC_00151.JPG: ['BCU', 'UAIC']
+  clasificate: 40/83
+  [paritate] UAIC_00216.JPG: ['BCU', 'UAIC']
+  clasificate: 60/83
+  [paritate] UAIC_00220.JPG: ['BCU', 'BVD_COPOU', 'UAIC']
+  [paritate] UAIC_00225.JPG: ['BCU', 'BVD_COPOU']
+  [paritate] UAIC_00230.JPG: ['BCU', 'UAIC']
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.494
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[14  0  1]
+ [ 6  5 16]
+ [16  3 22]]
+
+##### Detector: AKAZE #####
+  extrase features: 100/400
+  extrase features: 200/400
+  extrase features: 300/400
+  extrase features: 400/400
+  extrase features: 83/83
+--- AKAZE + BF ---
+  [paritate] BCU_00083.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 20/83
+  [paritate] BC_00142.JPG: ['BVD_COPOU', 'UAIC']
+  clasificate: 40/83
+  clasificate: 60/83
+  clasificate: 80/83
+  clasificate: 83/83
+Acuratete: 0.373
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[ 2  8  5]
+ [ 0 21  6]
+ [ 0 33  8]]
+--- AKAZE + kNN ---
+  clasificate: 20/83
+  [paritate] BC_00137.JPG: ['BCU', 'UAIC']
+  [paritate] BC_00145.JPG: ['BCU', 'UAIC']
+  [paritate] BC_00146.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] BC_00152.JPG: ['BVD_COPOU', 'UAIC']
+  [paritate] BC_00154.JPG: ['BCU', 'UAIC']
+  clasificate: 40/83
+  [paritate] BC_00156.JPG: ['BCU', 'UAIC']
+  [paritate] BC_00157.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00218.JPG: ['BCU', 'UAIC']
+  clasificate: 60/83
+  [paritate] UAIC_00219.JPG: ['BCU', 'UAIC']
+  [paritate] UAIC_00234.JPG: ['BCU', 'UAIC']
+  clasificate: 80/83
+  [paritate] UAIC_00239.JPG: ['BCU', 'UAIC']
+  clasificate: 83/83
+Acuratete: 0.639
+Etichete: ['BCU', 'BVD_COPOU', 'UAIC']
+Matrice de confuzie:
+ [[12  0  3]
+ [ 8  7 12]
+ [ 5  2 34]]
+
+=== Rezumat acuratete ===
+detector matcher      acc
+  HARRIS      BF 0.710843
+  HARRIS     kNN 0.493976
+    SIFT      BF 0.578313
+    SIFT     kNN 0.614458
+     ORB      BF 0.530120
+     ORB     kNN 0.493976
+   BRISK      BF 0.445783
+   BRISK     kNN 0.493976
+   AKAZE      BF 0.373494
+   AKAZE     kNN 0.638554
